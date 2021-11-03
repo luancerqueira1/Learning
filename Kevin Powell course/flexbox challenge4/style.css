@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800&family=Roboto:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 ,h2 {
+    font-family: 'Playfair Display', serif;
+    
+}
+
+p {
+    font-family:'Roboto', sans-serif;
+    font-size: 18px;
+}
+.text-center {
+    text-align: center;
+}
+.container {
+    max-width:  1128px;
+    margin: 5% auto;
+    border: 2px solid black;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    min-height: 660px; 
+    justify-content: center;
+    align-items: center;
+    background-color: #F3EED9;
+}
+
+.head p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+.head h1 {
+    font-size: 60px;
+    max-width: 700px;
+    font-weight: 800;
+    color: #824936;
+      
+}
+
+.main-content {
+    width: 80%;
+    margin: 0 auto;
+}
+.content-text {
+    background-color: rgb(53, 47, 129);
+    height: 350px;
+     
+}
+
+.content-text h2{
+    color: #824936;
+    padding-top: 70px;
+    padding-bottom: 40px;
+    font-size: 38px;
+}
+.text {
+    display: flex;
+         
+}
+
+.text p {
+   max-width: 500px;
+   margin: 0 auto;
+}
