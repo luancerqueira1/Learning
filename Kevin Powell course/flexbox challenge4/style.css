@@ -17,14 +17,21 @@ p {
     font-family:'Roboto', sans-serif;
     font-size: 18px;
 }
+
+img {
+    width: 100%;
+    
+    padding: 0;
+    margin: 0;
+   
+}
 .text-center {
     text-align: center;
+   
+    color: #824936;
+    font-size: 36px;
 }
-.container {
-    max-width:  1128px;
-    margin: 5% auto;
-    border: 2px solid black;
-}
+
 
 .head {
     display: flex;
@@ -49,29 +56,72 @@ p {
     color: #824936;
       
 }
+/*========main content========*/
 
-.main-content {
+.container {
+    
+    padding:  80px;
+}
+
+.container h2 {
+    margin-bottom: 30px;
+}
+.container-text {
+    display: flex;
     width: 80%;
     margin: 0 auto;
 }
-.content-text {
-    background-color: rgb(53, 47, 129);
-    height: 350px;
-     
+
+
+.container-text p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+            
 }
 
-.content-text h2{
-    color: #824936;
-    padding-top: 70px;
-    padding-bottom: 40px;
-    font-size: 38px;
+.container-text p + p {
+    padding-left: 70px;
 }
-.text {
+
+/*=====container2========*/
+
+.container2 {
+    padding: 80px ;
+    background-color: #222C2A;     
+}
+
+.container-all {
     display: flex;
-         
+    width:80%;
+    margin: 0 auto ;   
 }
 
-.text p {
-   max-width: 500px;
-   margin: 0 auto;
+.container-content h2 {
+    color: #F3EED9;
+    font-size: 2em;
+    margin-bottom: 20px;
 }
+
+.container-content p {
+    width: 70%;
+    font-size: 21px;
+    color: #fff;
+ }
+
+ /*========container3=======*/
+
+ .container3 {
+     padding: 80px;
+     background-color: #824936;
+ }
+
+ .container-all2 {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto; 
+ }
+
+
+
+    
