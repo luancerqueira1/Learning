@@ -19,8 +19,6 @@ p {
 }
 
 img {
-    width: 100%;
-    
     padding: 0;
     margin: 0;
    
@@ -68,22 +66,20 @@ img {
 }
 .container-text {
     display: flex;
-    width: 80%;
+    justify-content: space-between;
     margin: 0 auto;
 }
 
 
 .container-text p {
+    
     font-family: 'Roboto', sans-serif;
     font-size: 21px;
             
 }
 
-.container-text p + p {
-    padding-left: 70px;
-}
 
-/*=====container2========*/
+/*=====made custom for you========*/
 
 .container2 {
     padding: 80px ;
@@ -92,7 +88,6 @@ img {
 
 .container-all {
     display: flex;
-    width:80%;
     margin: 0 auto ;   
 }
 
@@ -108,7 +103,7 @@ img {
     color: #fff;
  }
 
- /*========container3=======*/
+ /*========create with care=======*/
 
  .container3 {
      padding: 80px;
@@ -116,10 +111,56 @@ img {
  }
 
  .container-all2 {
+  
     display: flex;
-    justify-content: space-between;
-    width: 80%;
     margin: 0 auto; 
+ }
+
+ .container-content3  {
+    
+    margin: 0 auto;
+}
+ .container-all2 h2 {
+     width: 70%;
+     margin: 0 auto;
+    color: #F3EED9;
+    font-size: 2em;
+    margin-bottom: 20px;
+
+ }
+ 
+ .container-all2 p {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 21px;
+    color: #fff;   
+ }
+ 
+ @media (max-width: 990px) {
+     
+     .container-text {
+         flex-direction: column;
+     }
+     .container-text p {
+        
+         margin-bottom: 30px;
+        
+     }
+     .container2 {
+         align-items: center;
+     }
+     .container-all {
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+     .container-all img {
+         max-width: 500px;
+     }
+     .container-all p {
+         
+         margin-bottom: 30px;
+     }
  }
 
 
