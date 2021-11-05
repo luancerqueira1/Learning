@@ -19,6 +19,7 @@ p {
 }
 
 img {
+    max-width: 450px;
     padding: 0;
     margin: 0;
    
@@ -76,6 +77,10 @@ img {
     font-family: 'Roboto', sans-serif;
     font-size: 21px;
             
+}
+
+.padding {
+    padding-right: 30px;
 }
 
 
@@ -137,7 +142,9 @@ img {
  }
  
  @media (max-width: 990px) {
-     
+     .container {
+        padding: 10%;
+     }
      .container-text {
          flex-direction: column;
      }
@@ -146,20 +153,55 @@ img {
          margin-bottom: 30px;
         
      }
-     .container2 {
-         align-items: center;
+     .container-content p{
+         width: 100%;
+            
      }
+
+     .padding {
+         padding-right: 0;
+     }
+
+
+
+
+     /*=======container2======*/
+     .container2 {
+        padding: 10%;
+    }
      .container-all {
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
+        flex-direction: column;  
      }
      .container-all img {
          max-width: 500px;
      }
      .container-all p {
-         
          margin-bottom: 30px;
+     }
+
+
+     /*=====container3=====*/
+
+    .container3 {
+        padding: 10%;
+    }
+     .container-all2 {
+         margin: 0 auto;
+         width: 100%;
+         flex-direction: column;
+     }
+     .container-all2 img {
+       
+        margin-bottom: 30px;
+     }
+     .container-content3 p {
+         
+         width: 100%;
+     }
+
+     .container-content3 h2 {
+       
+       width: 100%;
      }
  }
 
