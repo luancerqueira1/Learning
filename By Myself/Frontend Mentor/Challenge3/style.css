@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+h1 ,h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+strong {
+    color: hsl(277, 64%, 61%);;
+}
+
+.container {
+    background-color:hsl(233, 47%, 7%);
+    padding: 15px;
+}
+
+.container-content {
+    border-radius: 10px;
+    background-color:  hsl(244, 38%, 16%);
+}
+
+
+.photo {
+    background-color:  hsl(277, 64%, 61%);
+    border-radius: 10px 10px 0 0;
+    background-size: ;
+     
+}
+
+.image-header {
+    width: 100%;
+    height: 100%;
+    mix-blend-mode:  multiply;
+    opacity: 90%;
+   
+   
+   
+}
+
+.content {
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.content h1 {
+    width: 60%;
+    margin: 20px auto;
+}
+.content p {
+    font-family: 'Roboto Condensed', sans-serif;
+    opacity: 40%;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
+
+}
+
+.dados p {
+    font-family: 'Lexend Deca', sans-serif;
+    text-transform: uppercase;
+  
+    letter-spacing: 1px;   
+}
+
+.attribution {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: blanchedalmond;
+}
+
+
+
+@media (min-width: 850px) {
+    .container {
+        height: 100vh;
+        display: flex;
+        align-items: flex-end;    
+    }
+   .container-content {
+       display: flex;
+       margin: auto;  
+       max-width: 1000px; 
+   }
+
+   .content p {
+       text-align: start;
+   }
+   .dados {
+       display: flex;
+       justify-content: space-evenly;
+   }
+   .photo {
+       order: 1;
+       border-radius: 0 10px 10px 0;
+   }
+}
+
+
+
