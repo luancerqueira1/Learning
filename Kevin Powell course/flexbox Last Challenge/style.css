@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;;
+}
+
+.hidden {
+    display: none;
+}
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase; 
+    color: #23424A;
+    font-weight: 900;
+    background-color: #A59678;
+   
+    border-radius: 100px;
+}
+
+.btn:hover {
+    opacity: 70%;
+}
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.container-foto h1 {
+    font-size: 37px;
+    color: #A59678;
+    padding: 10px 0;
+}
+
+.container-foto p {
+    color: #6F737F;
+    padding: 20px 0;
+}
+
+.tablet {
+   
+    color: #fff;   
+}
+
+.tablet div {
+    background-color:#3B4050;
+    margin: 10px;
+    padding: 40px;
+    text-align: center;
+   
+}
+
+.tablet div p {
+    line-height: 30px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media (min-width:800px) {
+    .tablet {
+        display: flex;
+    }
+    .tablet div  {
+        padding: 35px;
+    }
+    .tablet div p {
+        width: 100%;
+    }
+}
+
+
+
+@media (min-width:1100px) {
+    nav {
+        background-color: #2E323F;
+    }
+
+    .hidden {
+        display: block;
+    }
+    .background {
+        background-color: #3B4050;
+        padding: 200px 0;
+    }
+    .container {
+        display: flex;
+        justify-content: space-between; 
+    }
+    
+
+    .nav {
+       display: flex;
+       justify-content: space-between;
+       max-width: 1200px;
+       margin: auto;
+       padding: 10px 20px;
+    }
+         
+   
+   .nav h2 {
+    font-size: 30px;
+    color: #fff;
+    opacity: 90%;
+    }
+
+    .btn-nav {
+        padding: .10em 1em;
+    }
+   
+   .nav-list {
+       display: flex;
+   }
+   .nav-list li {
+       text-transform: uppercase;
+       font-weight: bold;
+     font-size: 21px;
+       padding-left: 20px;
+   }
+   .nav-list li:hover {
+       opacity: 80%;
+   }
+   .nav-list a {
+       color: #fff;
+       opacity: 90%;
+   }
+   
+    .container-main {
+        display: flex;
+    }
+
+    .container-foto {
+        width: 70%;
+    }
+    .tablet {
+        padding-left: 50px;
+        width: 50%;
+        flex-direction: column;
+    }
+    
+}
