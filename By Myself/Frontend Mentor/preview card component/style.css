@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color:  hsl(217, 54%, 11%);
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+}
+
+.principal-image img {
+    width:100%;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;  
+    cursor: pointer; 
+}
+
+.principal-image img:hover {
+    color:  hsl(178, 100%, 50%);
+    
+    z-index: 2;
+}
+p {
+    font-size: 18px;
+    color: hsl(215, 51%, 70%);
+}
+
+.card{
+    padding: 25px;
+    margin: 0 auto;
+    border-radius: 9px;
+   max-width: 375px;
+    background-color:  hsl(216, 50%, 16%)
+}
+
+.card h1 {
+   color:  hsl(0, 0%, 100%);
+   font-size: 25px;
+   cursor: pointer;
+}
+
+.card > p {
+    margin: 30px 0;
+}
+.info {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.info h2,p  {
+    margin: 0;
+   
+}
+.info-cristal {
+    display: flex;
+    color:  hsl(178, 100%, 50%);
+    font-size: 15px;
+   align-items: center;
+}
+
+
+.info-relogio {
+    display: flex;
+    align-items: center;
+}
+.crital {
+    padding: 10px;
+   height: 25px;
+   width: auto;
+   text-align: center;
+   justify-content: center;
+}
+.relogio {
+    padding: 10px;
+    height: 25px;
+    width: auto;
+}
+.user {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.user img {
+    width: 40px;
+    padding-right: 10px;  
+}
+
+.user strong { color:  hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+hr {
+    border-top: none;
+    border-bottom: 1px solid hsl(215, 51%, 70%);
+    
+}
+.attribution {
+    margin: 10px 0;
+    text-align: center;
+}
+
