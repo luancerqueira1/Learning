@@ -228,3 +228,228 @@ nav .navigation ul li a:hover {
     bottom: 115px;
 }
 
+/*====registration====*/
+
+#registration {
+    padding: 6vw 8vw 6vw 8vw;
+    background-image: linear-gradient(rgba(99,112,168, 0.5), rgba(81,91,133, 0.5)), url("images/signup.jpg");
+    width: 1005;
+    height: 1005;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#registration .reminder {
+    color: #fff;
+}
+
+#registration .reminder  h1{
+    color: #fff;
+}
+
+#registration .reminder .time {
+    display: flex;
+    margin-top: 40px;
+}
+
+#registration .reminder .time .date {
+    text-align: center;
+    padding: 13px 33px;
+    background: rgba(225, 225, 225, 0.25);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 5px;
+    margin: 0 5px 10px 5px;
+    border: 1px solid rgba(225, 225, 225, 0.18);
+    font-size: 1.1rem;
+    font-weight: 600;
+} 
+
+#registration .form {
+   
+    background: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+#registration .form input {
+    margin: 15px 0;
+    padding: 15px 10px;
+    border: 1px solid rgb(84, 40, 241);
+    outline: none;  
+}
+
+
+#registration .form a.yellow {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 13px 35px;
+    background-color: #fff;
+    border-radius: 8px;
+    background-color: #fdc93b;
+    transition: .3s ease;
+}
+
+#registration .form input::placeholder {
+    color: #413c3c;
+    font-weight: 500;
+    font-size: .9rem;
+}
+
+#registration .btn {
+    margin-top: 20px;
+}
+
+#registration a.yellow:hover {
+    color: rgb(21, 21, 100);
+    background-color: #fff;
+}
+
+/*=====experts=====*/
+
+#experts {text-align: center;
+    padding: 8vw 8vw 0 8vw;
+}
+
+#experts .expert-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+
+#experts .expert-box .profile {
+    background: #fafaf1;
+    padding: 30px 10px;
+}
+
+.pro-links {
+    margin-top:20px;
+}
+
+.pro-links i {
+    padding: 10px 13px ;
+    border: 1px solid rgb(21, 21, 100);
+    cursor: pointer;
+    border-radius: 3px;
+    transition: 0.4s ease;
+  
+}
+
+.pro-links i:hover {
+    background: rgb(21, 21, 100);
+    color: #fff;
+    border: 1px solid rgb(21, 21, 100);
+}
+
+/*=====footer======*/
+
+footer {
+    padding: 8vw;
+    background-color: #101c32;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+footer .footer-col {
+    padding-bottom: 40px;
+}
+
+footer h3 {
+    color: rgb(241, 240, 245);
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+footer li {
+    list-style: none;
+    cursor: pointer;
+    color: #7b838a;
+    padding: 10px 0;
+}
+
+footer li:hover {
+    color: rgb(241, 240, 245);
+}
+
+footer p {
+    color: #7b838a;
+}
+
+footer .subscribe {
+    margin-top: 20px;
+}
+
+footer input {
+    width: 220px;
+    padding: 15px 12px;
+    background: #334f6c;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    
+}
+
+footer .subscribe a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 12px 15px;
+    font-weight: 600;
+    border-radius: 0 5px 5px 0;
+   
+}
+
+footer .subscribe a.yellow {
+    color: #fff;
+    background: #fdc93b;
+    transition: 0.3s ease;
+}
+
+footer .subscribe a.yellow:hover {
+    color: rgb(21, 21, 100);
+    background: #fff;
+}
+
+footer .copyright {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;   
+}
+
+footer .copyright .pro-links {
+    margin-top: 0px;
+}
+
+footer .copyright .pro-links i {
+   background: #5f7185;
+   color: #fff;
+   cursor: pointer;
+}
+
+footer .copyright .pro-links i:hover {
+    background: #fdc93b;
+    color: #2c2c2c; 
+}
+
+footer .copyright p {
+    color: #fff;
+}
+    
+    
+
+
+
+
