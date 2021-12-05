@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5be6e0a9e7.js" crossorigin="anonymous"></script>
+    <title>REsponsive Dashboard Admin</title>
+</head>
+<body>
+
+    <!--===== NavBAr =====-->
+    <nav class="navbar">
+        <h4>Dashboard</h4>
+        <div class="profile">
+            <span class="fas fa-search"></span>
+            <img class="profile-image" src="https://picsum.photos/200/200?ramdon=1" alt="">
+            <p>lorem ipsum</p>
+        </div>
+    </nav>
+    <!--===== Sidebar =====-->
+    <input type="checkbox" id="toggle">
+    <label class="side-toggle" for="toggle"><span class="fas fa-bars"></span></label>
+
+    <div class="sidebar">
+        <div class="sidebar-menu">
+            <span class="fas fa-clipboard-list"></span><p>Overview</p>
+        </div>
+        <div class="sidebar-menu">
+            <span class="fas fa-users"></span><p>Teams</p>
+        </div>
+        <div class="sidebar-menu">
+            <span class="fas fa-credit-card"></span><p>payment</p>
+        </div>
+        <div class="sidebar-menu">
+            <span class="fas fa-chart-line"></span><p>Statistic</p>
+        </div>
+        <div class="sidebar-menu">
+            <span class="fas fa-id-card"></span><p>Contact</p>
+        </div>
+        <div class="sidebar-menu">
+            <span class="fas fa-cog"></span><p>Setting</p>
+        </div>
+        
+    </div>
+
+    <!--===== MAin Dashboard =====-->
+    <main>
+        <div class="dashboard-container">
+            <!--===== 4 cards top =====-->
+            <div class="card total1">
+                <div class="info">
+                    <div class="info-detail">
+                        <h3>Revenue</h3>
+                        <p>Lorem, ipsum dolor.</p>
+                        <h2>1,873,250 <span>USD</span></h2>
+                    </div>  
+                    <div class="info-image">
+                        <i class="fas fa-money-check-alt"></i>
+                    </div>              
+                </div>
+            </div>
+            <div class="card total2">
+                <div class="info">
+                    <div class="info-detail">
+                        <h3>Total Orders</h3>
+                        <p>Lorem, ipsum dolor.</p>
+                        <h2>10,890 <span>Orders</span></h2>
+                    </div>
+                    <div class="info-image">
+                        <i class="fas fa-boxes"></i>
+                    </div>
+                </div>       
+            </div>
+            <div class="card total3">
+                <div class="info">
+                    <div class="info-detail">
+                        <h3>customers</h3>
+                        <p>Lorem, ipsum dolor.</p>
+                        <h2>340 <span>companies</span></h2>
+                    </div>
+                    <div class="info-image">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="card total4">
+                <div class="info">
+                    <div class="info-detail">
+                       <h3>Daily Orders</h3>
+                       <p>Lorem, ipsum dolor.</p>
+                       <h2>56 <span>Orders</span></h2> 
+                    </div>
+                    <div class="info-image">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                </div>
+                
+            </div>
+            <!--===== 2 cards bottom =====-->
+            <div class="card detail">
+                <div class="detail-header">
+                    <h2>All Orders</h2>
+                    <button>See More</button>
+                </div>
+                <table>
+                    <tr>
+                        <th>Order #</th>
+                        <th>Company name</th>
+                        <th>Status</th>
+                        <th>Total</th>
+                        <th>Created</th>
+                        <th>Last Updated</th>
+                    </tr>
+                    <tr>
+                        <td>#PW-0001</td>
+                        <td>Potential Corp</td>
+                        <td><span class="status onprogress"> <i class="fas fa-circle"></i>ONPROGRESS</span></td>
+                        <td>3,149,19 USD</td>
+                        <td>Apr 11, 2021</td>
+                        <td>Today</td>
+                    </tr>
+                    <tr>
+                        <td>#PW-0002</td>
+                        <td>Webcode inc</td>
+                        <td><span class="status comfirmed"> <i class="fas fa-circle"></i>CONFIRMED</span></td>
+                        <td>830.78 USD</td>
+                        <td>Mar 29, 2021</td>
+                        <td>Yesterday</td>
+                    </tr>
+                    <tr>
+                        <td>#PW-0003</td>
+                        <td>coding Time</td>
+                        <td><span class="status fulfilled"> <i class="fas fa-circle"></i>FULFILLED</span></td>
+                        <td>928.81 USD</td>
+                        <td>Feb 10, 2020</td>
+                        <td>Feb 21, 2021</td>
+                    </tr>
+                    <tr>
+                        <td>#PW-0004</td>
+                        <td>Microsoft</td>
+                        <td><span class="status fulfilled"> <i class="fas fa-circle"></i>FULFILLED</span></td>
+                        <td>928.81 USD</td>
+                        <td>Feb 10, 2020</td>
+                        <td>Feb 21, 2021</td>
+                    </tr>
+                    <tr>
+                        <td>#PW-0005</td>
+                        <td>Apple inc</td>
+                        <td><span class="status comfirmed"> <i class="fas fa-circle"></i>CONFIRMED</span></td>
+                        <td>830.78 USD</td>
+                        <td>Mar 29, 2021</td>
+                        <td>Yesterday</td>
+                    </tr>>
+                    <tr>
+                        <td>#PW-0006</td>
+                        <td>Penereang</td>
+                        <td><span class="status onprogress"> <i class="fas fa-circle"></i>ONPROGRESS</span></td>
+                        <td>3,149,19 USD</td>
+                        <td>Apr 11, 2021</td>
+                        <td>Today</td>
+                    </tr>
+                    <tr>
+                        <td>#PW-0007</td>
+                        <td>Paralon Corp</td>
+                        <td><span class="status comfirmed"> <i class="fas fa-circle"></i>CONFIRMED</span></td>
+                        <td>830.78 USD</td>
+                        <td>Mar 29, 2021</td>
+                        <td>Yesterday</td>
+                    </tr>
+                    <tr>
+                        <td>#PW-0008</td>
+                        <td>Coding Scale</td>
+                        <td><span class="status onprogress"> <i class="fas fa-circle"></i>ONPROGRESS</span></td>
+                        <td>3,149,19 USD</td>
+                        <td>Apr 11, 2021</td>
+                        <td>Today</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="card customer">
+            <h2>Sales Activities</h2>
+                <div class="customer-wrapper">
+                    <img class="customer-image" src="https://picsum.photos/200/200?ramdon=7" alt="">
+                    <div class="customer-name">
+                        <h4>Mollitia Rerum</h4>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <p class="customer-date">
+                        Today
+                    </p>
+                </div>
+                <div class="customer-wrapper">
+                    <img class="customer-image" src="https://picsum.photos/200/200?ramdon=2" alt="">
+                    <div class="customer-name">
+                        <h4>Mollitia Rerum</h4>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <p class="customer-date">
+                        Today
+                    </p>
+                </div>
+                <div class="customer-wrapper">
+                    <img class="customer-image" src="https://picsum.photos/200/200?ramdon=3" alt="">
+                    <div class="customer-name">
+                        <h4>Mollitia Rerum</h4>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <p class="customer-date">
+                        Today
+                    </p>
+                </div>
+                <div class="customer-wrapper">
+                    <img class="customer-image" src="https://picsum.photos/200/200?ramdon=4" alt="">
+                    <div class="customer-name">
+                        <h4>Mollitia Rerum</h4>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <p class="customer-date">
+                        Today
+                    </p>
+                </div>
+                <div class="customer-wrapper">
+                    <img class="customer-image" src="https://picsum.photos/200/200?ramdon=5" alt="">
+                    <div class="customer-name">
+                        <h4>Mollitia Rerum</h4>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <p class="customer-date">
+                        Today
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>
