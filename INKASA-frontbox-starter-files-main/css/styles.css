@@ -33,6 +33,9 @@
 /* 1. Estilos gerais
 /**********************************/
 
+html {
+	scroll-behavior: smooth;
+}
 body {
 	background-color: var(--ff-primary);
 	font-family: var(--ff-primary);
@@ -270,11 +273,126 @@ img {
 /* 7. Vantagens
 /**********************************/
 
+.vantagens {
+	max-width: 960px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.vantagem {
+	max-width: 240px;
+	margin: 10px;
+}
+
+.vantagem__titulo {
+	font-size: 1.7rem;
+	margin-bottom: 5px;
+	margin-left: 10px;
+}
+
+.vantagem__titulo::before {
+	content: '';
+	display: inline-block;
+	width: 10px;
+	height: 25px;
+	margin-right: 5px;
+}
+
+.vantagem:nth-child(3n+1) .vantagem__titulo::before {
+	background: var(--clr-green-light);
+}
+
+.vantagem:nth-child(3n+2) .vantagem__titulo::before {
+	background: var(--clr-pink-dark);
+}
+
+.vantagem:nth-child(3n+3) .vantagem__titulo::before {
+	background: var(--clr-green-dark);
+}
+
+@media (max-width:800px) {
+	.vantagem {
+		max-width: 220px;
+	}
+}
 /**********************************/
 /* 8. Newsletter
 /**********************************/
 
+.newsletter {
+	background: var(--clr-green-light);
+}
+
+.newsletter-c {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 50px 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.newsletter-info {
+	flex: 1 1 260px;
+	padding-left: 10px;
+}
+
+.newsletter-info__titulo {
+	font-size: 2.6rem;
+	font-weight: bold;
+}
+
+.newsletter-info__descricao {
+	font-style: italic;
+}
+
+.newsletter-form {
+	flex: 2 1 260px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.newsletter-form__input {
+	flex: 3 1 260px;
+	font-size: 1.25rem;
+	width: 325px;
+	color: #000000;
+	font-style: italic;
+	font-family: var(--ff-primary);
+	border: 10px solid var(--clr-pink-dark);
+	padding: 10px;
+	margin: 0;
+	border-radius: 0;
+}
+
+.newsletter-form__submit {
+	flex: 1 1 260px;
+	width: 192px;
+	font-family: var(--ff-primary);
+	font-size: 2.25rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	background: var(--clr-pink-dark);
+	color: black;
+	cursor: pointer;
+	border: none;
+	padding: 15px;
+}
 /**********************************/
 /* 9. Footer
 /**********************************/
 
+.footer {
+	background: var(--clr-pink-light);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 55px calc((100% - 960px) / 2);
+}
+
+.footer__copyright,
+.footer__logo {
+	padding-left: 10px;
+	padding-right: 10px;
+}
