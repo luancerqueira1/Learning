@@ -228,7 +228,42 @@ img {
 	background-color: var(--clr-green-light);
 	border-radius: 50%;
 	margin-right: 5px;
+}
 
+.plano__btn-comprar {
+	display: block;
+	max-width: 180px;
+	font-size: 2rem;
+	font-weight: bold;
+	margin: 15px auto;
+	padding: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	border: 2px solid var(--clr-green-light);
+}
+
+.plano:last-child {
+	background-color: var(--clr-green-light);
+}
+
+.plano:last-child,
+.plano:last-child .plano__btn-comprar {
+	border: 2px solid var(--clr-pink-dark);
+}
+
+.plano:last-child .plano-lista__item::before,
+.plano:last-child .plano__divisor {
+	background: var(--clr-pink-dark);
+}
+
+@media (max-width:800px) {
+	.plano:nth-child(3) {
+		order: -2;
+	}
+
+	.plano:nth-child(2) {
+		order: -1;
+	}
 }
 /**********************************/
 /* 7. Vantagens
