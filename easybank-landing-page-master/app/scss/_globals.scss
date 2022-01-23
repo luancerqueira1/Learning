@@ -47,7 +47,7 @@ a:hover {
 
 button ,
 .button {
-    padding: 1rem 1.875rem;
+    padding: 0.875rem 2.175rem;
     background: linear-gradient(to right,$limeGreen, $brightCyan);
     border-radius: 50px;
     cursor: pointer;
@@ -57,7 +57,14 @@ button ,
 }
 
 // visibillity
+.hide-for-mobile {
+    @include breakpoint-down(large) {
+        display: none;
+    }
+}
 
 .hide-for-desktop {
-    
+    @include breakpoint-up (large) {
+        display: none;
+    }
 }
