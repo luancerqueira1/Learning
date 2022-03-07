@@ -1,0 +1,58 @@
+
+@use 'ressets' as *;
+@use 'variables' as *;
+
+@function weight ($weight-name) {
+    @return map-get($font-weights, $weight-name );
+}
+
+$red: rgb(0, 174, 255);
+
+h1{
+    color: $red;
+    background-color: rgb(25, 31, 31);
+}
+
+
+@mixin mq($size) {
+    @media (min-width: $size) {
+        @content;
+    }
+}
+
+@mixin flexCenter ($direction){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: ($direction) ;
+}
+
+
+body {
+
+    background: $red;
+    color: white;
+    font-weight:  weight(bold);
+
+    section {
+        width: 80%;
+        margin-inline: auto;
+        @include flexCenter (column);
+       
+    }
+
+    @include mq(700px){
+        background-color: yellow;
+    }
+
+    @include mq (900px) {
+        background-color: green;
+    }
+
+    @include mq (1200px) {
+        background-color: rgb(9, 119, 146);
+    }
+    h1 {
+        padding-left: .5rem;
+    }
+}

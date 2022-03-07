@@ -1,0 +1,42 @@
+section p:hover {
+  color: aqua;
+}
+
+h1 {
+  color: #00aeff;
+  background-color: #191f1f;
+}
+
+body {
+  background: #00aeff;
+  color: white;
+  font-weight: 700;
+}
+body section {
+  width: 80%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 700px) {
+  body {
+    background-color: yellow;
+  }
+}
+@media (min-width: 900px) {
+  body {
+    background-color: green;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    background-color: #097792;
+  }
+}
+body h1 {
+  padding-left: 0.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */
