@@ -6,10 +6,11 @@
     @return map-get($font-weights, $weight-name );
 }
 
-$red: rgb(0, 174, 255);
+$primary-color: rgb(40, 43, 44);
+$text-color:white;
 
 h1{
-    color: $red;
+   
     background-color: rgb(25, 31, 31);
 }
 
@@ -20,6 +21,8 @@ h1{
     }
 }
 
+
+
 @mixin flexCenter ($direction){
     display: flex;
     justify-content: center;
@@ -27,32 +30,45 @@ h1{
     flex-direction: ($direction) ;
 }
 
+@mixin theme($light-theme: false) {
+    @if $light-theme {
+        background: lighten($primary-color, 100%);
+        color: blue;
+    }@else {
+        background-color: red;
+        color: black;
+    }
+}
+
+@mixin mobile {
+    @media (max-width:$mobile) {
+        @content;
+    }
+}
+
+
+
 
 body {
 
-    background: $red;
-    color: white;
+    background: $primary-color;
+    color: $text-color;
     font-weight:  weight(bold);
 
     section {
         width: 80%;
         margin-inline: auto;
-        @include flexCenter (column);
-       
-    }
+        @include flexCenter (columns);
 
-    @include mq(700px){
-        background-color: yellow;
+        @include mobile {
+            flex-direction: column;
+        }
     }
+}
 
-    @include mq (900px) {
-        background-color: green;
-    }
-
-    @include mq (1200px) {
-        background-color: rgb(9, 119, 146);
-    }
-    h1 {
-        padding-left: .5rem;
-    }
+.light {
+    @include theme($light-theme:false);
+}
+p {
+    color: rgb(35, 197, 21);
 }
