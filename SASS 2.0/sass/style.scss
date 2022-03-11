@@ -1,0 +1,16 @@
+$red :red;
+
+$colors: (
+    h1: red,
+    twitter: blue,
+    instagram:orange,
+);
+
+
+
+@each $name, $color in $colors {
+   #{$name} {
+       color: $color;
+   }
+}
+
