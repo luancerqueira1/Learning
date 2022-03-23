@@ -1,16 +1,15 @@
 $red :red;
 
 $colors: (
-    h1: red,
-    twitter: blue,
-    instagram:orange,
+    color1: red,
+    color2: blue,
+    color3:orange,
 );
 
 
 
 @each $name, $color in $colors {
-   #{$name} {
-       color: $color;
-   }
+   .#{$name} {
+       color: ($color);}
 }
 
