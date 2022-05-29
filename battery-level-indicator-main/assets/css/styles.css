@@ -201,3 +201,24 @@ body {
 .gradient-color-green::after {
   background: var(--gradient-color-green);
 }
+
+/*============== BREAKPOINTS ===========*/
+/* SMAL */
+@media screen and (max-width :375px){
+  .battery__card {
+    zoom: .8;
+  }
+}
+/* MEDIUM */
+@media screen and (min-width :430px) {
+  .battery__card {
+    width: 312px;
+  }
+}
+/* LARGE */
+@media screen and (min-width :1024px) {
+  .battery__card {
+    zoom: 1.5;
+  }
+}
+
