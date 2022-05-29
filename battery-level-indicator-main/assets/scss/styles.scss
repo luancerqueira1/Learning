@@ -1,0 +1,8 @@
+@import 'config/variables';
+@import 'base/base';
+@import 'components/battery';
+@import 'components/breakpoints';
+
+body {
+	background-color: red;
+}
