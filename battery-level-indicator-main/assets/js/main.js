@@ -65,11 +65,11 @@ function initBattery() {
       updateBattery();
 
         /*batery status events  */
-        batt.addEventListener('chargingchange', (updateBattery) => {
-
-        })
-        batt.addEventListener('levelchange', (updateBattery) => {
-
+      batt.addEventListener("chargingchange", () => {
+        updateBattery();
+      });
+        batt.addEventListener('levelchange', () => {
+          updateBattery();
         })
     }) 
 }
