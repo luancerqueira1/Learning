@@ -380,6 +380,78 @@ section {
   color: var(--color-grey-2);
 }
 
+.port-text {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.portfolios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.portfolios .port-item {
+  position: relative;
+}
+.portfolios .port-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.portfolios .port-item .hover-items {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-secondary);
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 400ms ease-in-out;
+}
+.portfolios .port-item .hover-items h3 {
+  font-size: 1.5rem;
+  color: var(--color-white);
+  margin-bottom: 1.5rem;
+}
+.portfolios .port-item .hover-items .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portfolios .port-item .hover-items .icons .icon {
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+  cursor: pointer;
+  transition: all 400ms ease-in-out;
+}
+.portfolios .port-item .hover-items .icons .icon i {
+  font-size: 1.5rem;
+  margin: 0 1rem;
+}
+.portfolios .port-item .hover-items .icons .icon:hover {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+}
+
+.port-item:hover .hover-items {
+  opacity: 1;
+  transform: scale(1);
+}
+
 .btn-con {
   display: flex;
 }
