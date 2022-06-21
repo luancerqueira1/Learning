@@ -46,6 +46,16 @@ allSections.addEventListener('click', (e) => {
 });
 
 sectBtn.forEach((item) => {
-	item.addEventListener('click', activeLink);
-	
-})
+  item.addEventListener('click', activeLink);
+});
+
+//TOGGLE THEME
+const themeBtn = document.querySelector('.theme-btn');
+
+themeBtn.addEventListener('click', () => {
+  let element = document.body;
+  element.classList.toggle('light-mode');
+});
+
+
+
